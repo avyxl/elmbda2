@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Mabda2 | المبدأ</title>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Amiri:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050203;--pn:#0f0608;--ln:#2e1217;--tx:#f1e6e6;--mu:#9a7b7f;--rd:#ff2a3d;--ok:#35d07f;--lo:#e8b13a;--su:#ff7a1a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 'Amiri',Georgia,serif;overflow-x:hidden}
+.m{font:12.5px 'JetBrains Mono',ui-monospace,monospace}
+.bg{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.bg span{position:absolute;color:var(--rd);opacity:.07;white-space:nowrap;font-family:'Reem Kufi',sans-serif}
+.bg .a{font-size:clamp(120px,22vw,320px);top:-4%;right:-3%;opacity:.1}
+.bg .b{font-size:clamp(60px,10vw,140px);bottom:5%;left:-2%;transform:rotate(-8deg)}
+.bg .c{font:28px 'Amiri',serif;top:46%;left:3%;writing-mode:vertical-rl;opacity:.16}
+.bg .d{font:22px 'Amiri',serif;bottom:3%;right:4%;opacity:.16}
+.w{position:relative;max-width:1200px;margin:0 auto;padding:26px 18px 50px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--ln);padding-bottom:16px}
+h1{margin:0;font:700 clamp(38px,7vw,64px)/1 'Reem Kufi',sans-serif}
+h1 small{display:block;font:400 clamp(20px,3vw,28px) 'Amiri',serif;color:var(--rd);margin-top:6px;direction:rtl;text-align:left}
+.tg{color:var(--mu);max-width:400px}.tg b{color:var(--rd);font-weight:400}
+#drop{margin:20px 0 14px;border:1.5px dashed #5a1620;background:linear-gradient(180deg,#1a070b,transparent);border-radius:14px;padding:28px 16px;text-align:center;cursor:pointer;transition:.2s}
+#drop.on{border-color:var(--rd);background:#2a0a10}
+#drop .ar{font:700 32px 'Reem Kufi',sans-serif;color:var(--rd);direction:rtl}
+#drop p{margin:4px 0 12px;color:var(--mu)}
+:focus-visible{outline:2px solid var(--rd);outline-offset:2px}
+button{font:600 13px 'JetBrains Mono',monospace;background:transparent;color:var(--tx);border:1px solid #5a1620;border-radius:8px;padding:8px 14px;cursor:pointer}
+button:hover{background:var(--rd);color:#000;border-color:var(--rd)}
+#sum{display:none;margin-bottom:14px;padding:12px 16px;border:1px solid var(--ln);border-radius:12px;background:var(--pn);gap:18px;flex-wrap:wrap}
+.g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:16px}
+@media(max-width:860px){.g{grid-template-columns:1fr}}
+.cd{background:var(--pn);border:1px solid var(--ln);border-radius:14px;overflow:hidden}
+.cd h2{margin:0;padding:11px 16px;border-bottom:1px solid var(--ln);font:600 13px 'JetBrains Mono',monospace;color:var(--mu);display:flex;justify-content:space-between;gap:8px}
+#q{width:calc(100% - 32px);margin:12px 16px;background:var(--bg);border:1px solid var(--ln);border-radius:8px;color:var(--tx);padding:9px 12px;font:13px 'JetBrains Mono',monospace}
+#list{max-height:600px;overflow:auto}
+.r{display:flex;gap:10px;align-items:center;padding:8px 16px;border-top:1px solid var(--ln);cursor:pointer}
+.r:hover,.r.s{background:#220a0f}.r.s{box-shadow:inset 3px 0 var(--rd)}
+.r .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.r .z{color:var(--mu);flex:none}
+.dt{width:10px;height:10px;border-radius:50%;flex:none;background:#444}
+.ok{--c:var(--ok)}.lo{--c:var(--lo)}.su{--c:var(--su)}.bd{--c:var(--rd)}
+.dt.ok,.dt.lo,.dt.su,.dt.bd{background:var(--c)}
+.em{padding:28px 16px;color:var(--mu);text-align:center}
+#det{max-height:700px;overflow:auto}
+.vd{display:flex;gap:16px;align-items:center;padding:16px;border-bottom:1px solid var(--ln);border-left:6px solid var(--c);background:linear-gradient(90deg,color-mix(in srgb,var(--c) 14%,transparent),transparent)}
+.vd .ar{font:700 40px 'Reem Kufi',sans-serif;color:var(--c);direction:rtl;line-height:1}
+.vd b{font:700 20px 'Reem Kufi',sans-serif;color:var(--c)}
+.vd p{margin:2px 0 0;color:var(--mu);font-size:14px}
+.vd .sc{margin-left:auto;font:600 28px 'JetBrains Mono',monospace;color:var(--c)}
+.sec{padding:12px 16px;border-top:1px solid var(--ln)}.sec:first-child{border:0}
+.sec h3{margin:0 0 8px;font:700 19px 'Amiri',serif;color:var(--rd)}
+.f{display:flex;gap:10px;padding:5px 0}.f i{flex:none;font:600 11px 'JetBrains Mono',monospace;padding:2px 7px;border-radius:5px;background:var(--c);color:#000;height:20px}
+.f span{color:var(--mu);font-size:14px}
+.ck{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2px 12px}
+.ck div{font-size:14px;color:var(--mu)}.ck .p:before{content:"✓ ";color:var(--ok)}.ck .x{color:var(--tx)}.ck .x:before{content:"✕ ";color:var(--rd)}
+.kv{display:grid;grid-template-columns:100px 1fr;gap:4px 10px}.kv div:nth-child(odd){color:var(--mu)}.kv div{word-break:break-all}
+pre{margin:0;max-height:200px;overflow:auto;background:var(--bg);border:1px solid var(--ln);border-radius:8px;padding:10px;white-space:pre-wrap;word-break:break-all}
+.pv{max-width:100%;max-height:240px;border-radius:8px}
+a{color:var(--rd)}
+.nt{margin-top:18px;text-align:center;color:var(--mu);font-size:14px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><span class="a">مبدأ</span><span class="b">ابدأ من هنا</span><span class="c">كل ملف له حكاية</span><span class="d">افحص قبل أن تفتح</span></div>
+<div class="w">
+<header><h1>El Mabda2<small>المبدأ — فاحص الملفات</small></h1><p class="tg">Drop a file or folder. Every check runs <b>inside your browser</b>, nothing is uploaded.</p></header>
+<div id="drop" tabindex="0" role="button" aria-label="Drop files or press Enter to choose">
+<div class="ar">اسحب الملفات هنا</div><p>Drag files or a folder onto this box</p>
+<button id="bf" type="button">Choose files</button> <button id="bd" type="button">Choose folder</button>
+<input id="fi" type="file" multiple hidden><input id="di" type="file" webkitdirectory hidden></div>
+<div id="sum" class="m"></div>
+<div class="g">
+<section class="cd"><h2><span>files</span><span id="cnt">0</span></h2><input id="q" placeholder="Search by name or path" aria-label="Search"><div id="list"><div class="em">لا توجد ملفات بعد<br>No files loaded yet.</div></div></section>
+<section class="cd"><h2><span>verdict</span><span id="sel">none selected</span></h2><div id="det"><div class="em">Select a file to see its verdict.</div></div></section>
+</div>
+<p class="nt">Static analysis only: files are read, never executed. A clean result means nothing suspicious was found, not that a file is guaranteed safe.</p>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let files=[],cur=null,url=null;
+const fmt=n=>n<1024?n+" B":n<1048576?(n/1024).toFixed(1)+" KB":n<1073741824?(n/1048576).toFixed(1)+" MB":(n/1073741824).toFixed(2)+" GB";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hex=u=>[...u].map(b=>b.toString(16).padStart(2,"0")).join("");
+const EXE=new Set("exe scr com pif bat cmd ps1 vbs vbe js jse wsf hta jar msi lnk dll sys reg cpl iso img apk msc".split(" "));
+const DOCX=new Set("jpg jpeg png gif bmp pdf txt doc docx xls xlsx ppt pptx mp3 mp4 csv rtf".split(" "));
+const MAC=new Set("docm xlsm pptm dotm xlsb".split(" "));
+const CH={name:"Hidden or spoofed filename",ext:"Executable-type extension",mis:"Extension matches real content",ent:"Packed or encrypted content",pe:"Valid PE structure",sig:"Digital signature present",pack:"Known packer sections",wx:"Writable and executable sections",emb:"Executable hidden inside file",eicar:"Antivirus test signature",ps:"Encoded PowerShell / LOLBins",api:"Injection, keylogger, downloader APIs",rans:"Ransomware behaviour strings",cred:"Credential theft tooling",obf:"Obfuscated script code",mac:"Office macros",pdf:"Active PDF content",zip:"Archive anomalies",bomb:"Zip bomb ratio",tail:"Data appended to image",url:"Raw-IP / onion links",pers:"Persistence and anti-analysis",size:"Non-empty file"};
+const PAT=[
+[/X5O!P%@AP\[4\\PZX54\(P\^\)7CC\)7\}\$EICAR/,"eicar",10,"EICAR antivirus test string"],
+[/powershell(\.exe)?\s.{0,60}-(e|enc|encodedcommand)\s/i,"ps",4,"Encoded PowerShell command"],
+[/FromBase64String|certutil\s+-(urlcache|decode)|bitsadmin|mshta\b|regsvr32\s+\/s/i,"ps",3,"Download/decode tools often abused by malware"],
+[/WScript\.Shell|Scripting\.FileSystemObject|Shell\.Application/i,"ps",2,"Script shell execution objects"],
+[/VirtualAllocEx|WriteProcessMemory|CreateRemoteThread|NtUnmapViewOfSection|QueueUserAPC/,"api",4,"Process injection APIs"],
+[/SetWindowsHookEx|GetAsyncKeyState|GetKeyboardState/,"api",3,"Keylogging APIs"],
+[/URLDownloadToFile|InternetOpenUrl|DownloadString|DownloadFile\(/,"api",2,"Download-from-internet APIs"],
+[/vssadmin\s+delete|bcdedit.{0,40}recoveryenabled|wbadmin\s+delete/i,"rans",6,"Deletes backups (ransomware behaviour)"],
+[/your files (have been|are) encrypted|\.onion\b/i,"rans",3,"Ransom note or Tor reference"],
+[/mimikatz|sekurlsa|procdump.{0,20}lsass/i,"cred",5,"Credential theft tooling"],
+[/eval\s*\(\s*(atob|unescape|String\.fromCharCode)|document\.write\(unescape|\\x[0-9a-f]{2}(\\x[0-9a-f]{2}){40}/i,"obf",3,"Obfuscated script code"],
+[/AutoOpen|Document_Open|Workbook_Open|Auto_Open/,"mac",4,"Macro auto-run entry point"],
+[/CurrentVersion\\Run|schtasks\s+\/create|Startup\\/i,"pers",2,"Persistence mechanism"],
+[/IsDebuggerPresent|CheckRemoteDebuggerPresent|SbieDll|vmtoolsd|VBoxService/,"pers",1,"Anti-debug or anti-VM checks"],
+[/[A-Za-z0-9+\/]{500,}={0,2}/,"obf",1,"Very large base64 blob"]];
+function kind(u){const h=hex(u.subarray(0,8)).toUpperCase();
+ const T=[["4D5A","exe","Windows executable"],["7F454C46","elf","ELF executable"],["504B03","zip","ZIP container (zip, docx, jar, apk)"],["504B05","zip","ZIP container"],["25504446","pdf","PDF document"],["D0CF11E0","ole","OLE2 (legacy Office, MSI)"],["89504E47","png","PNG image"],["FFD8FF","jpg","JPEG image"],["47494638","gif","GIF image"],["1F8B","gz","GZIP archive"],["52617221","rar","RAR archive"],["377ABCAF","7z","7-Zip archive"],["CAFEBABE","class","Java class / Mach-O"],["4C000000","lnk","Windows shortcut"],["52494646","media","RIFF media"],["494433","media","MP3 audio"],["1A45DFA3","media","Matroska / WebM"]];
+ if(hex(u.subarray(4,8))=="66747970")return["media","MP4 video"];
+ const m=T.find(t=>h.startsWith(t[0]));return m?[m[1],m[2]]:["data","Plain data / text"]}
+function ent(u){if(!u.length)return 0;const c=new Uint32Array(256);for(const b of u)c[b]++;let h=0;for(const n of c)if(n){const p=n/u.length;h-=p*Math.log2(p)}return h}
+function peParse(u,F,size){const dv=new DataView(u.buffer,u.byteOffset,u.byteLength);
+ const o=dv.getUint32(0x3C,true);if(o+24>u.length||dv.getUint32(o,true)!==0x4550){F("pe",3,"MZ header without valid PE signature (corrupt or crafted)");return null}
+ const mach=dv.getUint16(o+4,true),ns=dv.getUint16(o+6,true),ts=dv.getUint32(o+8,true),osz=dv.getUint16(o+20,true),ch=dv.getUint16(o+22,true),op=o+24,plus=dv.getUint16(op,true)===0x20b,dd=op+(plus?112:96);
+ const signed=dd+40<=u.length&&dv.getUint32(dd+36,true)>0;
+ if(!signed)F("sig",1,"No embedded digital signature (unsigned code)");
+ if(ts===0||ts*1000>Date.now()+864e5)F("pe",2,"Compile timestamp is zero or in the future (often forged)");
+ let sp=op+osz,end=0,secs=[];
+ for(let i=0;i<ns&&sp+40<=u.length;i++,sp+=40){let n="";for(let k=0;k<8&&u[sp+k];k++)n+=String.fromCharCode(u[sp+k]);
+  const rs=dv.getUint32(sp+16,true),ro=dv.getUint32(sp+20,true),fl=dv.getUint32(sp+36,true);end=Math.max(end,ro+rs);
+  const e=rs&&ro+rs<=u.length?ent(u.subarray(ro,ro+rs)):0;secs.push([n,e]);
+  if(/^(UPX|\.aspack|\.themida|\.vmp|\.petite|\.nsp|MPRESS|\.enigma)/i.test(n))F("pack",3,"Packer section: "+n);
+  if((fl&0x20000000)&&(fl&0x80000000))F("wx",3,"Section "+n+" is writable and executable (self-modifying code)");
+  if(e>7.3&&rs>2048)F("ent",2,"Section "+n+" entropy "+e.toFixed(2)+" (likely packed or encrypted)")}
+ if(size-end>size*.3&&size-end>102400)F("pe",1,"Large overlay of "+fmt(size-end)+" appended after the program sections");
+ return{arch:{0x14c:"x86",0x8664:"x64",0xaa64:"ARM64"}[mach]||"0x"+mach.toString(16),dll:!!(ch&0x2000),ts:new Date(ts*1000).toISOString().slice(0,10),signed,secs}}
+async function zipScan(f,F){const sz=f.size,tail=new Uint8Array(await f.slice(Math.max(0,sz-70000)).arrayBuffer()),dv=new DataView(tail.buffer);
+ let e=-1;for(let i=tail.length-22;i>=0;i--)if(dv.getUint32(i,true)===0x06054b50){e=i;break}
+ if(e<0)return null;const n=dv.getUint16(e+10,true),cs=dv.getUint32(e+12,true),co=dv.getUint32(e+16,true);
+ if(cs>2e7||co+cs>sz)return null;const b=new Uint8Array(await f.slice(co,co+cs).arrayBuffer()),d=new DataView(b.buffer);
+ let p=0,out=[],tu=0,tc=0,enc=0,ex=[],trav=0,vba=0;
+ for(let i=0;i<n&&p+46<=b.length&&d.getUint32(p,true)===0x02014b50;i++){
+  const fl=d.getUint16(p+8,true),c=d.getUint32(p+20,true),u=d.getUint32(p+24,true),nl=d.getUint16(p+28,true),xl=d.getUint16(p+30,true),cl=d.getUint16(p+32,true),nm=new TextDecoder().decode(b.subarray(p+46,p+46+nl));
+  tu+=u;tc+=c;if(fl&1)enc++;if(/(^|[\\\/])\.\.([\\\/]|$)|^[\\\/]|^[a-z]:/i.test(nm))trav++;
+  if(EXE.has(nm.split(".").pop().toLowerCase())&&!nm.endsWith("/"))ex.push(nm);if(/vbaProject\.bin/i.test(nm))vba++;
+  if(out.length<400)out.push(nm+"  "+fmt(u));p+=46+nl+xl+cl}
+ if(trav)F("zip",5,trav+" entry path(s) escape the extraction folder (zip-slip)");
+ if(enc)F("zip",2,enc+" password-protected entries (content hidden from scanners)");
+ if(ex.length)F("zip",3,ex.length+" executable-type file(s) inside: "+ex.slice(0,3).join(", "));
+ if(vba)F("mac",5,"Contains vbaProject.bin (VBA macros)");
+ if(tc&&tu/tc>100&&tu>1e8)F("bomb",5,"Expands "+(tu/tc).toFixed(0)+"x to "+fmt(tu)+" (possible zip bomb)");
+ return{n,out,ratio:tc?tu/tc:0}}
+async function analyze(x){
+ if(x.r)return x.r;const f=x.f,fn=[];const F=(k,s,d)=>fn.push({k,s,d});
+ const head=new Uint8Array(await f.slice(0,Math.min(f.size,4194304)).arrayBuffer());
+ const [kd,kn]=kind(head),ext=(f.name.split(".").pop()||"").toLowerCase(),r={kd,kn,ext,head};
+ if(!f.size)F("size",1,"File is empty");
+ if(/[\u202e\u202d\u2066-\u2069]/.test(x.path))F("name",6,"Contains hidden right-to-left override characters that disguise the real extension");
+ if(/[ .]+$/.test(f.name)||/\s{3,}\.\w+$/.test(f.name))F("name",3,"Trailing dots or padding spaces hide the real extension");
+ if(/\.(pdf|docx?|xlsx?|pptx?|jpe?g|png|gif|txt|mp3|mp4|zip)\.(exe|scr|bat|cmd|js|vbs|ps1|com|lnk|hta)$/i.test(f.name))F("name",5,"Double extension: looks like a document but ends in an executable type");
+ if(EXE.has(ext))F("ext",1,"."+ext+" files can run code");
+ if(MAC.has(ext))F("mac",2,"Macro-enabled Office extension (."+ext+")");
+ if(["exe","elf","lnk","class"].includes(kd)&&!EXE.has(ext)&&ext!=="so"&&kd!=="class")F("mis",6,"Real content is "+kn+" but extension is ."+ext);
+ else if(kd==="zip"&&["jpg","jpeg","png","gif","txt","pdf","mp3","mp4"].includes(ext))F("mis",3,"Content is a ZIP container but extension is ."+ext);
+ else if(DOCX.has(ext)&&kd==="data"&&head.length>8&&!["txt","csv","rtf"].includes(ext))F("mis",2,"Extension ."+ext+" does not match the file's magic bytes");
+ const e=ent(head);r.e=e;
+ if(e>7.5&&!["zip","gz","rar","7z","png","jpg","media","pdf","gif"].includes(kd)&&f.size>4096)F("ent",3,"Entropy "+e.toFixed(2)+"/8 on a non-archive file (packed, encrypted or obfuscated)");
+ const t=new TextDecoder("latin1").decode(head),s=t+"\n"+t.replace(/\0/g,"");
+ for(const [re,k,sv,d] of PAT)if(re.test(s))F(k,sv,d);
+ if(kd!=="exe"&&t.indexOf("This program cannot be run in DOS mode")>0)F("emb",5,"A Windows executable is embedded inside this file");
+ if(kd==="exe")r.pe=peParse(head,F,f.size);
+ if(kd==="pdf"){const m=[/\/JavaScript|\/JS\s*[(<]/.test(t)&&"JavaScript",/\/OpenAction|\/AA\b/.test(t)&&"auto-run action",/\/Launch/.test(t)&&"/Launch command",/\/EmbeddedFile/.test(t)&&"embedded file"].filter(Boolean);if(m.length)F("pdf",m.length>1?4:3,"PDF contains "+m.join(", "))}
+ if(kd==="ole"&&/Macros|VBA/.test(t))F("mac",4,"Legacy Office file with VBA macro storage");
+ if(/<script[\s>]|javascript:|<iframe|onload\s*=/i.test(t)&&["svg","html","htm","xml","hta"].includes(ext))F("obf",3,"Active content ("+ext+"): script, iframe or event handler");
+ if(kd==="png"){const i=t.lastIndexOf("IEND");if(i>0&&head.length-(i+8)>16&&f.size<=4194304)F("tail",4,"Extra "+(head.length-i-8)+" bytes after PNG end marker (hidden payload?)")}
+ if(kd==="jpg"&&f.size<=4194304){let i=head.length-2;while(i>0&&!(head[i]===255&&head[i+1]===217))i--;if(i>0&&head.length-i-2>16)F("tail",2,"Extra "+(head.length-i-2)+" bytes after JPEG end marker (hidden payload, or phone photo metadata)")}
+ const urls=[...new Set(s.match(/https?:\/\/[^\s"'<>\x00-\x1f]{4,90}/g)||[])],ips=[...new Set(s.match(/\b(?:25[0-5]|2[0-4]\d|1?\d?\d)(?:\.(?:25[0-5]|2[0-4]\d|1?\d?\d)){3}\b/g)||[])].filter(i=>!/^(0|127|255)\./.test(i)&&i!=="1.0.0.0"&&!/^\d+\.\d+\.\d+\.0$/.test(i));
+ r.urls=urls;r.ips=ips.slice(0,10);
+ if(urls.some(u=>/^https?:\/\/(\d{1,3}\.){3}\d{1,3}/.test(u))||/\.onion\b/.test(s))F("url",3,"Links to raw IP addresses or .onion hosts");
+ if(kd==="zip"&&f.size<5e8)try{r.zip=await zipScan(f,F)}catch(_){}
+ r.fn=fn.sort((a,b)=>b.s-a.s);r.score=fn.reduce((a,b)=>a+b.s,0);
+ const c=r.score>=7?["bd","خطير","DANGEROUS","Strong signs of malicious or deceptive content. Do not open it."]:r.score>=3?["su","مشبوه","SUSPICIOUS","Several warning signs. Only open it in an isolated VM, or delete it."]:r.score>=1?["lo","حذر","LOW RISK","Minor flags that are common in normal files. Check the source."]:["ok","نظيف","NO RED FLAGS","Nothing suspicious found by these static checks."];
+ r.v=c;return x.r=r}
+async function sha(f){const h=await crypto.subtle.digest("SHA-256",await f.arrayBuffer());return hex(new Uint8Array(h))}
+function render(){const t=$("q").value.toLowerCase(),v=files.filter(x=>x.path.toLowerCase().includes(t)),L=$("list");
+ $("cnt").textContent=v.length+" / "+files.length;
+ if(!v.length){L.innerHTML='<div class="em">'+(files.length?"No match.":"لا توجد ملفات بعد<br>No files loaded yet.")+"</div>";return}
+ L.innerHTML="";v.slice(0,1500).forEach(x=>{const d=document.createElement("div");d.className="r"+(x===cur?" s":"");d.tabIndex=0;
+  d.innerHTML='<span class="dt '+(x.r?x.r.v[0]:"")+'"></span><span class="n">'+esc(x.path)+'</span><span class="z m">'+fmt(x.f.size)+"</span>";
+  d.onclick=()=>show(x);d.onkeydown=e=>{if(e.key==="Enter")show(x)};L.appendChild(d)})}
+function summary(){const c={bd:0,su:0,lo:0,ok:0};files.forEach(x=>x.r&&c[x.r.v[0]]++);const S=$("sum");S.style.display="flex";
+ S.innerHTML='<span>'+files.length+' files</span><span style="color:var(--rd)">'+c.bd+' dangerous</span><span style="color:var(--su)">'+c.su+' suspicious</span><span style="color:var(--lo)">'+c.lo+' low risk</span><span style="color:var(--ok)">'+c.ok+' no red flags</span>'}
+async function add(l){files.push(...l.map(f=>({f,path:f.__p||f.webkitRelativePath||f.name})));render();
+ for(const x of files)if(!x.r){try{await analyze(x)}catch(_){x.r={v:["lo","؟","UNREADABLE","Could not read this file."],fn:[],score:0,head:new Uint8Array(),kn:"?",e:0,urls:[],ips:[]}}
+  if(files.length<400||files.indexOf(x)%10===0){render();summary()}}render();summary()}
+async function show(x){cur=x;render();$("sel").textContent=x.f.name.slice(0,26);if(url){URL.revokeObjectURL(url);url=null}
+ const r=await analyze(x),f=x.f,D=$("det"),[c,ar,lb,ms]=r.v,flagged=new Set(r.fn.map(a=>a.k));
+ let h='<div class="vd '+c+'"><div class="ar">'+ar+'</div><div><b>'+lb+'</b><p>'+ms+'</p></div><div class="sc" title="risk score">'+r.score+'</div></div>';
+ h+='<div class="sec"><h3>النتائج · Findings</h3>'+(r.fn.length?r.fn.map(a=>'<div class="f '+(a.s>=5?"bd":a.s>=3?"su":"lo")+'"><i>+'+a.s+'</i><span><b style="color:var(--tx);font-weight:400">'+esc(CH[a.k])+'</b><br>'+esc(a.d)+"</span></div>").join(""):'<span style="color:var(--mu)">No findings.</span>')+"</div>";
+ h+='<div class="sec"><h3>الفحوصات · '+Object.keys(CH).length+' checks run</h3><div class="ck">'+Object.keys(CH).map(k=>'<div class="'+(flagged.has(k)?"x":"p")+'">'+esc(CH[k])+"</div>").join("")+"</div></div>";
+ h+='<div class="sec"><h3>التفاصيل · Details</h3><div class="kv m"><div>name</div><div>'+esc(f.name)+'</div><div>size</div><div>'+fmt(f.size)+'</div><div>type</div><div>'+esc(r.kn)+'</div><div>mime</div><div>'+esc(f.type||"unknown")+'</div><div>modified</div><div>'+new Date(f.lastModified).toLocaleString()+'</div><div>magic</div><div>'+hex(r.head.subarray(0,16)).replace(/(..)/g,"$1 ")+'</div><div>entropy</div><div>'+r.e.toFixed(2)+' / 8</div><div>SHA-256</div><div id="sh">'+(f.size>3e8?"skipped (over 300 MB)":"computing…")+"</div></div></div>";
+ if(r.pe)h+='<div class="sec"><h3>PE · '+(r.pe.dll?"DLL":"EXE")+'</h3><div class="kv m"><div>arch</div><div>'+r.pe.arch+'</div><div>compiled</div><div>'+r.pe.ts+'</div><div>signed</div><div>'+(r.pe.signed?"certificate table present (chain not verified)":"no")+'</div><div>sections</div><div>'+r.pe.secs.map(s=>esc(s[0])+" "+s[1].toFixed(1)).join(" | ")+"</div></div></div>";
+ if(r.zip)h+='<div class="sec"><h3>الأرشيف · Archive ('+r.zip.n+')</h3><pre class="m">'+esc(r.zip.out.join("\n"))+"</pre></div>";
+ if(r.urls.length||r.ips.length)h+='<div class="sec"><h3>روابط · Network strings</h3><pre class="m">'+esc(r.urls.slice(0,12).concat(r.ips).join("\n"))+"</pre></div>";
+ if(f.type.startsWith("image/")||f.type.startsWith("video/")){url=URL.createObjectURL(f);h+='<div class="sec"><h3>معاينة · Preview</h3>'+(f.type.startsWith("image/")?'<img class="pv" src="'+url+'" alt="preview">':'<video class="pv" src="'+url+'" controls></video>')+"</div>"}
+ D.innerHTML=h;
+ if(f.size<=3e8)try{const s=await sha(f);if(cur===x)$("sh").innerHTML=s+'<br><a href="https://www.virustotal.com/gui/file/'+s+'" target="_blank" rel="noopener">Look up this hash on VirusTotal</a> <span style="color:var(--mu)">(only the hash is sent, and only if you click)</span>'}catch(_){if(cur===x)$("sh").textContent="could not hash (file too large for memory)"}}
+$("q").oninput=render;
+async function walk(e,p){if(e.isFile)return new Promise(r=>e.file(f=>{f.__p=p+f.name;r([f])},()=>r([])));
+ const rd=e.createReader();let a=[];for(;;){const b=await new Promise(r=>rd.readEntries(r,()=>r([])));if(!b.length)break;a=a.concat(b)}
+ return(await Promise.all(a.map(c=>walk(c,p+e.name+"/")))).flat()}
+const D0=$("drop");
+["dragenter","dragover"].forEach(e=>addEventListener(e,v=>{v.preventDefault();D0.classList.add("on")}));
+["dragleave","drop"].forEach(e=>addEventListener(e,v=>{v.preventDefault();if(e==="drop"||!v.relatedTarget)D0.classList.remove("on")}));
+addEventListener("drop",async v=>{const it=[...v.dataTransfer.items||[]].map(i=>i.webkitGetAsEntry&&i.webkitGetAsEntry()).filter(Boolean);
+ if(it.length)add((await Promise.all(it.map(e=>walk(e,"")))).flat());else add([...v.dataTransfer.files])});
+$("bf").onclick=e=>{e.stopPropagation();$("fi").click()};$("bd").onclick=e=>{e.stopPropagation();$("di").click()};
+D0.onclick=()=>$("fi").click();D0.onkeydown=e=>{if(e.key==="Enter")$("fi").click()};
+$("fi").onchange=e=>{add([...e.target.files]);e.target.value=""};$("di").onchange=e=>{add([...e.target.files]);e.target.value=""};
+</script>
+</body>
+</html>
